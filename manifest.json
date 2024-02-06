@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Tab opener extension",
+    "version": "1.0",
+    "description": "A simple Chrome extension with easy access to open a tab.",
+    "permissions": ["activeTab"],
+    "icons": 
+    {
+     "16": "Logo/logo.png",
+     "48": "Logo/logo.png",
+     "128": "Logo/logo.png",
+     "300": "Logo/logo.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["content.css"]
+      }
+    ]
+  }
+  
